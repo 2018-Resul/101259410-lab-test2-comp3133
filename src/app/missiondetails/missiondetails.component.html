@@ -1,0 +1,17 @@
+
+
+<mat-card style="background-color: aqua;" class="example-card">
+  <mat-card-title-group>
+    <mat-card-title> {{ misson.mission_name}}</mat-card-title>
+    <mat-card-subtitle>  {{ misson.rocket.rocket_name}}</mat-card-subtitle>
+    <mat-card-subtitle>Launch Year: {{ misson.launch_year}}</mat-card-subtitle>
+    <mat-card-subtitle> Launch Site: {{ misson.launch_site.site_name_long}}</mat-card-subtitle>
+    <mat-card-subtitle>Rocket Type: {{ misson.rocket.rocket_type}}</mat-card-subtitle>
+    <img mat-card-xl-image src="{{ misson.links.mission_patch_small}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    {{ misson.details}}
+
+  </mat-card-content>
+  <a  href="/missionlist" > RETURN TO MISSION LIST </a>
+</mat-card>
